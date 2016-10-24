@@ -16,7 +16,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         
-        Picture(image: #imageLiteral(resourceName: "frog")) --> Psychedelic() --> metalView
+        Picture(image: #imageLiteral(resourceName: "frog")) --> metalView
         
         
     }
