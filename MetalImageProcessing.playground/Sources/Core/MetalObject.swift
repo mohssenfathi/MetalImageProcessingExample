@@ -16,13 +16,6 @@ public protocol MetalOutput {
     
 }
 
-// Default Implementation
-extension MetalInput {
-    
-    public func processIfNeeded() { }
-    
-}
-
 open class MetalObject {
     
     var functionName: String!
@@ -94,4 +87,10 @@ extension MetalObject: MetalInput {
         self.output?.input = self
     }
     
+}
+
+
+// Default Implementation
+extension MetalInput {
+    public func processIfNeeded() { }
 }
